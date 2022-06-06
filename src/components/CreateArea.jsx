@@ -23,7 +23,7 @@ const CreateArea = (props) => {
     props.onAdd(note)
     setNote({
       title: "",
-      conten: ""
+      content: ""
     })
     event.preventDefault()
   }
