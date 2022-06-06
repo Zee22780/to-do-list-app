@@ -2,11 +2,18 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 
 const Note = (props) => {
+  function handleClick() {
+    props.onDelete(props.id)
+  }
+
+
   return ( 
     <div className='note'>
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <RemoveIcon />
+      <button onClick={handleClick}>
+        <RemoveIcon />
+      </button>
     </div>
   );
 }
