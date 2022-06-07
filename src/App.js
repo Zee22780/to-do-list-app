@@ -32,7 +32,7 @@ function App() {
             key = {index}
             id = {index}
             title={noteItem.title}
-            content={noteItem.conent}
+            content={noteItem.content}
             onDelete={deleteNote}
           />
         )
